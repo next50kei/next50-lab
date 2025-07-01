@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100日チャレンジ - NEXT50 Lab</title>
+    <meta name="description" content="AIを活用して、何かを制作することを100日間続けるチャレンジの記録。">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="header-logo">NEXT50 Lab</a>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li><a href="index.html#concept">コンセプト</a></li>
+                <li><a href="blogs.html">探求の記録</a></li>
+                <li><a href="index.html#themes">テーマ</a></li>
+                <li><a href="index.html#operator">運営者について</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a href="index.html">トップ</a></li>
+            <li class="mobile-nav-item"><a href="index.html#concept">コンセプト</a></li>
+            <li class="mobile-nav-item"><a href="blogs.html">探求の記録</a></li>
+            <li class="mobile-nav-item"><a href="index.html#themes">テーマ</a></li>
+            <li class="mobile-nav-item"><a href="index.html#operator">運営者について</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article class="container post-container">
+            <header class="post-header">
+                <p class="post-category">考察</p>
+                <h1 class="post-title">100日チャレンジ</h1>
+                <p class="post-meta">
+                    <time datetime="2025-06-30">最新更新日: 2025.06.30</time> / 著者: 一ノ瀬 慧
+                </p>
+            </header>
+            
+            <img src="img/eyecatch_thought_sample.png" alt="100日チャレンジ" class="post-eyecatch">
+
+            <div class="post-content">
+                <p>毎日AIを活用して、何かを制作することを100日間続ける、という挑戦を始めます。このページでは、その日々の記録を随時更新していきます。</p>
+                
+                <hr style="border: none; border-top: 1px solid #eee; margin: 60px 0;">
+
+                <h3>Day 1: AIとのWebサイト共同制作 (2025/06/29)</h3>
+                <p>
+                    チャレンジ初日。活動拠点となるWebサイトそのものを、AIとの対話を通じてゼロから作り上げた。制作したのはトップページ、ブログ一覧、記事ページの3つ。WordPress等のCMSは使わず、AIにHTML/CSSを出力してもらい手動で更新する、原始的だが柔軟な方法を選択。自身の判断時間を除けば約2時間でこの品質のサイトが形になったことに衝撃を受けた。AIと人間の新しい共同作業の形を体験した一日。
+                </p>
+                
+                <hr style="border: none; border-top: 1px solid #eee; margin: 60px 0;">
+
+                <h3>Day 2: インフォグラフィックの活用とツールの壁 (2025/06/30)</h3>
+                <p>
+                    GeminiのCanvas機能で作成したインフォグラフィックをWebページに活用する試み。当初、「iframe」での埋め込みを考えたが、Googleのセキュリティ仕様で実現できず、大きな手戻りが発生。最終的に、①インフォグラフィックを画像として手動保存、②文章を別途AIで作成、③HTMLコードをAIに生成依頼、④手動でデプロイ、という非常に手間のかかる手順となった。AIツールは単体で優れていても、ツール間の連携にはまだ壁があると痛感。この「最後の1マイル」の効率化が今後の大きなテーマだ。
+                </p>
+                <h3>Day 3: キャリア棚卸の壁打ち (2025/07/01)</h3>
+                <p>
+                    Geminiを利用して、これまでのキャリア棚卸の壁打ちをした。ChatGPTと比べてそん色ない。文章生成能力は、人を超えていると改めて感じた。
+                </p>
+                
+                </div>
+
+            <footer class="post-footer">
+                <div class="share-buttons">
+                    <p>Share:</p>
+                </div>
+            </footer>
+        </article>
+
+        <section class="container post-container" style="padding-top:0;">
+            <div class="author-profile">
+                <img src="img/author_icon.png" alt="一ノ瀬 慧 アイコン" class="operator-icon">
+                <div>
+                    <h4>この記事を書いた人</h4>
+                    <h3>一ノ瀬 慧</h3>
+                    <p>AIと叡智を羅針盤に、人生の後半戦を探求するラボの主宰。その探求の過程を記録・共有している。</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="back-to-top-wrapper">
+            <a href="index.html" class="back-to-top-link">トップページへ戻る</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+         <ul class="footer-nav">
+            <li><a href="index.html#concept">コンセプト</a></li>
+            <li><a href="blogs.html">探求の記録</a></li>
+            <li><a href="index.html#themes">テーマ</a></li>
+            <li><a href="index.html#operator">運営者について</a></li>
+        </ul>
+        <p class="copyright">&copy; 2025 NEXT50 Lab</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                mobileNav.classList.toggle('active');
+            });
+        }
+        
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                mobileNav.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

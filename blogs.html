@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>探求の記録 - NEXT50 Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="header-logo">NEXT50 Lab</a>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li><a href="index.html#concept">コンセプト</a></li>
+                <li><a href="blogs.html">探求の記録</a></li>
+                <li><a href="index.html#themes">テーマ</a></li>
+                <li><a href="index.html#operator">運営者について</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a href="index.html">トップ</a></li>
+            <li class="mobile-nav-item"><a href="index.html#concept">コンセプト</a></li>
+            <li class="mobile-nav-item"><a href="blogs.html">探求の記録</a></li>
+            <li class="mobile-nav-item"><a href="index.html#themes">テーマ</a></li>
+            <li class="mobile-nav-item"><a href="index.html#operator">運営者について</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header class="page-header container">
+            <h1>探求の記録</h1>
+            <p>これまでの探求の全記録を、こちらでご覧いただけます。</p>
+        </header>
+
+        <section class="container blogs-main">
+            <nav class="category-filter">
+                <a href="#" class="active">すべて</a>
+                <a href="#">AIの探求</a>
+                <a href="#">叡智の探求</a>
+                <a href="#">考察</a>
+            </nav>
+
+            <div class="articles-grid">
+                <a href="100days.html" class="article-card">
+                    <img src="img/eyecatch_thought_sample.png" alt="100日チャレンジの記事" class="article-card-img">
+                    <div class="article-card-body">
+                        <p class="article-card-meta"><time datetime="2025-06-30">2025.06.30</time> / <span>考察</span></p>
+                        <h3 class="article-card-title">100日チャレンジ</h3>
+                    </div>
+                </a>
+                <a href="jinko.html" class="article-card">
+                    <img src="img/population_infographic.png" alt="人口問題のインフォグラフィック" class="article-card-img">
+                     <div class="article-card-body">
+                        <p class="article-card-meta"><time datetime="2025-06-30">2025.06.30</time> / <span>考察</span></p>
+                        <h3 class="article-card-title">日本の人口動態：インフォグラフィック解説</h3>
+                    </div>
+                </a>
+                </div>
+
+            <nav class="text-center">
+                <ul class="pagination">
+                    <li><span class="current">1</span></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">次へ >></a></li>
+                </ul>
+            </nav>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <ul class="footer-nav">
+           <li><a href="index.html#concept">コンセプト</a></li>
+           <li><a href="blogs.html">探求の記録</a></li>
+           <li><a href="index.html#themes">テーマ</a></li>
+           <li><a href="index.html#operator">運営者について</a></li>
+       </ul>
+       <p class="copyright">&copy; 2025 NEXT50 Lab</p>
+   </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                mobileNav.classList.toggle('active');
+            });
+        }
+        
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                mobileNav.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
