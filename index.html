@@ -117,7 +117,7 @@
                 <a href="#" class="btn">X (Twitter) フォロー</a>
             </div>
         </section>
-    </main> 
+    </main>
 
     <footer class="footer">
          <ul class="footer-nav">
@@ -133,14 +133,12 @@
         const hamburger = document.querySelector('.hamburger-menu');
         const mobileNav = document.querySelector('.mobile-nav');
         const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
-
         if (hamburger) {
             hamburger.addEventListener('click', () => {
                 hamburger.classList.toggle('active');
                 mobileNav.classList.toggle('active');
             });
         }
-        
         mobileNavLinks.forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');

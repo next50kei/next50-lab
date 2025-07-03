@@ -66,13 +66,13 @@
                         <h3 class="article-card-title">日本の人口動態：インフォグラフィック解説</h3>
                     </div>
                 </a>
-                </div>
+            </div>
 
             <nav class="text-center">
                 <ul class="pagination">
                     <li><span class="current">1</span></li>
                     <li><a href="#">2</a></li>
-                    <li><a href="#">次へ >></a></li>
+                    <li><a href="#">次へ &gt;&gt;</a></li>
                 </ul>
             </nav>
         </section>
@@ -93,14 +93,12 @@
         const hamburger = document.querySelector('.hamburger-menu');
         const mobileNav = document.querySelector('.mobile-nav');
         const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
-
         if (hamburger) {
             hamburger.addEventListener('click', () => {
                 hamburger.classList.toggle('active');
                 mobileNav.classList.toggle('active');
             });
         }
-        
         mobileNavLinks.forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
